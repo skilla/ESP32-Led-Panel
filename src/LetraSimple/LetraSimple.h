@@ -1,3 +1,6 @@
+#ifndef LETTER_TYPE_H
+#define LETTER_TYPE_H
+
 const byte letterRows = 9;
 const byte letterColumns = 8;
 
@@ -67,3 +70,5 @@ byte letterPixel(int position, byte row, byte col) {
     byte rowMask = mask[col];
     return (letterRow & rowMask) > 0 ? 1 : 0;
 }
+
+#endif //LETTER_TYPE_H

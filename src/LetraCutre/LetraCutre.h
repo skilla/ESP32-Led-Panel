@@ -1,3 +1,6 @@
+#ifndef LETTER_TYPE_H
+#define LETTER_TYPE_H
+
 const byte letterRows = 5;
 const byte letterColumns = 4;
 
@@ -219,3 +222,5 @@ byte letterPixel(int position, int row, int col) {
     }
     return lettersDefinition[position, row, col];
 }
+
+#endif //LETTER_TYPE_H
